@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Burguer from "./burguer"
-import { HeaderWrapper, Logo, MobileNav } from "./style"
+import { DesktopNav, HeaderWrapper, Logo, MobileNav } from "./style"
 
 const Header = (props) => {
 
@@ -9,6 +9,13 @@ const Header = (props) => {
     return (
         <HeaderWrapper>
             <Logo />
+            <DesktopNav>
+                <ul>
+                    <li>O que é?</li>
+                    <li>Tipos de piercings</li>
+                    <li>Bibliografia</li>
+                </ul>
+            </DesktopNav>
             <MobileNav open={open}>
                 <ul>
                     <li>O que é?</li>

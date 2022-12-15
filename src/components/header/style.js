@@ -9,6 +9,11 @@ export const HeaderWrapper = styled.header`
     align-items:center;
     justify-content: space-between;
     position: relative;
+
+    @media screen and (min-width: 900px) {
+        justify-content: flex-start;
+        gap: 25vw
+    }
 `
 
 export const Logo = styled.span`
@@ -50,5 +55,23 @@ export const MobileNav = styled.nav`
 
     @media screen and (min-width: 900px) {
         display: none
+    }
+`
+
+export const DesktopNav = styled.nav`
+    display: none;
+
+    @media screen and (min-width: 900px){
+        display: inline-block;
+
+        ul{
+            display:flex;
+            gap: 2rem;
+        }
+
+        ul li{
+            list-style: none
+        }
+        
     }
 `
