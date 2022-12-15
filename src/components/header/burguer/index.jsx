@@ -1,12 +1,9 @@
-import { useState } from "react"
 import BurguerWrapper from "./style"
 
-const Burguer = () => {
-
-    const [open, setOpen] = useState(false)
+const Burguer = (props) => {
 
     return (
-        <BurguerWrapper open={open} onClick={() => setOpen(open === false ? true : false)}>
+        <BurguerWrapper open={props.open} onClick={props.openFunction}>
             <div />
             <div />
             <div />
