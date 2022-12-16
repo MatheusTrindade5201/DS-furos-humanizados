@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import FontStyle from "./FontsStyle";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -7,7 +8,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background-color: ${props => props.theme.colors.primary}
+        background-color: ${props => props.theme.colors.primary};
+        font-family: 'Sarabun', sans-serif
     }
 `
 
