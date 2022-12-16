@@ -42,6 +42,7 @@ export const MobileNav = styled.nav`
     border-radius: 8px;
     background-color: #ffffff;
     transition: .25s ease-in-out;
+    z-index: 2;
 
     ul{
         display:flex;
