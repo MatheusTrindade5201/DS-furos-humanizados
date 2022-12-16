@@ -5,7 +5,7 @@ const HomePage = () => {
     
     return (
         <HomePageContainer>
-            <Header />
+            <Header selected={1}/>
         </HomePageContainer>
     )
 }

@@ -48,9 +48,22 @@ export const MobileNav = styled.nav`
         flex-direction: column;
         gap: 2rem;
     }
+    
 
     ul li{
-        list-style: none
+        list-style: none;
+        width: fit-content;
+    }
+
+    ul li:nth-child(${({selected}) => selected})::before{
+        content:'';
+        display: inline-block;
+        width: 100px;
+        height: 4px;
+        position: relative;
+        top: 30px;
+        width: 100%;
+        background-color: ${props => props.theme.colors.secondary}
     }
 
     @media screen and (min-width: 900px) {
@@ -67,10 +80,22 @@ export const DesktopNav = styled.nav`
         ul{
             display:flex;
             gap: 2rem;
+            align-items: center;
         }
 
+        ul li:nth-child(${({selected}) => selected})::before{
+        content:'';
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 4px;
+        background-color: ${props => props.theme.colors.secondary};
+    }
+
         ul li{
-            list-style: none
+            list-style: none;
+            line-height: 0
         }
         
     }

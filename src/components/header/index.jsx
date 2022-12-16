@@ -9,14 +9,14 @@ const Header = (props) => {
     return (
         <HeaderWrapper>
             <Logo />
-            <DesktopNav>
+            <DesktopNav selected={props.selected}>
                 <ul>
                     <li>O que é?</li>
                     <li>Tipos de piercings</li>
                     <li>Bibliografia</li>
                 </ul>
             </DesktopNav>
-            <MobileNav open={open}>
+            <MobileNav selected={props.selected} open={open}>
                 <ul>
                     <li>O que é?</li>
                     <li>Tipos de piercings</li>
