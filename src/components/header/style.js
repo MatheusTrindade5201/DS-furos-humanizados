@@ -4,12 +4,16 @@ import LogoMobile from '../../assets/images/Logo-mobile.svg'
 
 export const HeaderWrapper = styled.header`
     padding: 20px;
+    position: sticky;
+    background-color: ${props => props.theme.colors.primary};
+    top: 0;
+    z-index: 20;
     box-shadow: ${props => props.theme.colors.shadow};
     display:flex;
     align-items:center;
     justify-content: space-between;
-    position: relative;
-
+/*     position: relative;
+ */
     @media screen and (min-width: 900px) {
         justify-content: flex-start;
         gap: 25vw
@@ -32,7 +36,7 @@ export const Logo = styled.span`
 
 export const MobileNav = styled.nav`
     transform: ${({open}) => open === false ? 'translate(-500%)' : 'translate(0)'};
-    position: absolute;
+    position: fixed;
     top: 110px;
     margin: 2rem 0;
     width: calc(100vw - 40px);
@@ -40,7 +44,7 @@ export const MobileNav = styled.nav`
     box-shadow: ${props => props.theme.colors.shadow};
     box-sizing: border-box;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.colors.primary};
     transition: .25s ease-in-out;
     z-index: 2;
 
