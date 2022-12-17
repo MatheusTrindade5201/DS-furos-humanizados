@@ -18,7 +18,7 @@ const Slides = () => {
         <SlidesWrapper>
             <Swiper 
             modules={[Navigation]}
-            spaceBetween={0}
+            spaceBetween={45}
             slidesPerView={1}
             initialSlide={1}
             width={285} 

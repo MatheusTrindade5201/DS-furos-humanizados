@@ -11,7 +11,8 @@ const SlidesWrapper = styled.div`
     .image{
         box-shadow: ${props => props.theme.colors.shadow};
         border-radius: 5px;
-        width:295px
+        width:295px;
+        height: 250px
     }
 
     .swiper-button-next, .swiper-button-prev{
