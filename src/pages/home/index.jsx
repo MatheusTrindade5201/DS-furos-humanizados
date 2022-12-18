@@ -1,6 +1,7 @@
 import Card from "../../components/card"
 import Header from "../../components/header"
 import Slides from "../../components/slides"
+import Whatsapp from "../../components/whatsapp"
 import { HomePageContainer, Paragraphy, Title } from "./style"
 
 const HomePage = () => {
@@ -32,6 +33,7 @@ const HomePage = () => {
                     </section>
                 </section>
             </div>
+            <Whatsapp />
         </HomePageContainer>
     )
 }
