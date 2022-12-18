@@ -8,6 +8,7 @@ export const HomePageContainer = styled.main`
         display: flex;
         flex-direction: column;
         gap: 80px;
+        margin-bottom: 60px
     }
 
     .description>section{
@@ -16,10 +17,44 @@ export const HomePageContainer = styled.main`
         gap: 25px
     }
 
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
     @media screen and (min-width: 900px) {
         .description{
-        padding: 60px 90px 0 90px;
-    } 
+            padding: 60px 90px 0 90px;
+        } 
+
+        .cards{
+            flex-direction: row
+        }
+    }
+
+    @media screen and (min-width: 1100px){
+        .x>div{
+            display: inline-block;
+            width: 200px;
+            height: 3px;
+            background-color: ${props => props.theme.colors.secondary};
+
+            &:nth-child(1){
+                transform: rotate(65deg)
+            }
+            &:nth-child(2){
+                transform: rotate(-65deg)
+            }
+        }
+
+        .x{
+            display: flex;
+            flex-direction: column;
+            align-items:center
+        }
+        
     }
 `
 
