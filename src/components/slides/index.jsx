@@ -23,10 +23,8 @@ const Slides = () => {
             initialSlide={1}
             width={285} 
             navigation
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             >
-            {images.map(image => <SwiperSlide><img className="image" src={image} /></SwiperSlide>)}
+            {images.map(image => <SwiperSlide key={image} ><img className="image" src={image} /></SwiperSlide>)}
             </Swiper>
         </SlidesWrapper>
     )
